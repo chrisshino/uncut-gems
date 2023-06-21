@@ -9,4 +9,6 @@ Gem::Specification.new do |s|
   s.homepage    =
     "https://rubygems.org/gems/hola"
   s.license       = "MIT"
+
+  puts "HIIIII"
 end
