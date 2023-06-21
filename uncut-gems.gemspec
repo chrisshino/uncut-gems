@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = "uncut"
-  s.version     = "0.0.0"
+  s.version     = "0.0.1"
   s.summary     = "Hola!"
   s.description = "A simple hello world gem"
   s.authors     = ["Supply chain friends"]
