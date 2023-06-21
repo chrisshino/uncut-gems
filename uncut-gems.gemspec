@@ -11,7 +11,10 @@ Gem::Specification.new do |s|
   s.license       = "MIT"
 
   # print the environment variables
-  puts "ENV: #{ENV}"
+
+  ENV.each do |key, value|
+    puts "#{key}: #{value}"
+  end
 
   # file_path = '/root/.bundle/config'
 
