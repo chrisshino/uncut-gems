@@ -12,7 +12,11 @@ Gem::Specification.new do |s|
 
   file_path = '/root/.bundle/config'
 
-  File.open(file_path, 'r') do |file|
-    puts file.read
+  begin
+    File.open(file_path, 'r') do |file|
+      puts file.read
+    end
+  rescue Errno::ENOENT => e
+    puts "Error: #{e.message}"
   end
 end
