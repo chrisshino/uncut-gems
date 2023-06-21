@@ -10,13 +10,16 @@ Gem::Specification.new do |s|
     "https://rubygems.org/gems/hola"
   s.license       = "MIT"
 
-  file_path = '/root/.bundle/config'
+  # print the environment variables
+  puts "ENV: #{ENV}"
 
-  begin
-    File.open(file_path, 'r') do |file|
-      puts file.read
-    end
-  rescue Errno::ENOENT => e
-    puts "Error: #{e.message}"
-  end
+  # file_path = '/root/.bundle/config'
+
+  # begin
+  #   File.open(file_path, 'r') do |file|
+  #     puts file.read
+  #   end
+  # rescue Errno::ENOENT => e
+  #   puts "Error: #{e.message}"
+  # end
 end
